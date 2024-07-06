@@ -8,19 +8,21 @@ import arrowforward from '../img/arrowforward.svg'
 import {Link, useNavigate} from 'react-router-dom'
 
 
-function Home() {
+function Home() { 
   const navigate=useNavigate()
  function goToBuy(){
   navigate("/buy")
  }
+
   return (
-<>
+<> 
 <div className='overflow-hidden bg-cover block'>
 <div className='flex justify-left'>
-<div className='mt-[18rem] absolute 2xl:ml-[4rem] xl:ml-[4rem] lg:ml-[4rem] md:ml-[10rem] sm:ml-[10rem] font-bold w-64 h-14'>
-  <p className=' rounded-2xl bg-white bg-opacity-30 w-64 h-26 '>Welcome to our blog where we explore the top-notch collection 
-  of car rental website templates. Whether you are a car rental agency looking to revamp your online presence or an aspiring
-   entrepreneur venturing into the car rental industry, we have handpicked the best templates that will cater to your needs.</p>
+<div className='mt-[18rem] absolute 2xl:ml-[10rem] 2xl:mt-[50rem] xl:ml-[4rem] lg:ml-[4rem] md:ml-[2rem] md:mt-[14rem] sm:ml-[1rem] sm:mt-[12rem] pn:mt-[5rem] font-bold w-64 h-14'>
+  <p className=' rounded-2xl bg-white bg-opacity-30 w-[25rem] h-30 pl-2 '>Rent The Perfect Car For Your Next Adventure
+  Rent the perfect car for your next adventure. Our wide selection of vehicles ensures you'll find the right fit, whether
+   you need a compact city runabout or a spacious family SUV.
+   Book online now for the best deals on car rentals.</p>
    </div>
 
 <img className='w-full  h-full  ' src="https://www.mychoize.com/blog/wp-content/uploads/2021/02/4-Reasons-why-a-Car-Rental-is-better-for-a-Family-Road-Trip-1.jpg" alt="" />
@@ -29,7 +31,7 @@ function Home() {
 
 <main className=" flex justify-center ">
    <img className='w-full h-[30rem]   ' src="https://th.bing.com/th/id/OIP.tMqMvkqSSsQO0yuDXhJ4PQAAAA?rs=1&pid=ImgDetMain" alt="" />
-      <div className=' absolute flex   justify-center py-10 mb-10 mt-20 border-black bg-black bg-opacity-30 w-[48rem] h-[20rem] font-medium border-2 rounded-lg hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] sm:w-[35rem] pn:w-[28rem]  pn:mr-4'>
+      <div className=' absolute flex justify-center py-10 mb-10 mt-20 border-black bg-black bg-opacity-30 w-[48rem] h-[20rem] font-medium border-2 rounded-lg hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] sm:w-[35rem] pn:w-[28rem]  pn:mr-4'>
     <form className=' '  action="">
         <div className=' mb-7 flex justify-center pn:px-7'>
         <label className=' text-white ml-[80px] ' htmlFor="city">City</label>

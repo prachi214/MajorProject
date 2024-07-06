@@ -64,7 +64,7 @@ function Buy() {
     <div className="w-[20rem] rounded overflow-hidden shadow-lg">
       <img className="w-[20rem] " src='https://th.bing.com/th?id=OIP.XL0eSVAxrSPo-QPmrJDy1QHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2' alt='' />
       <div className="px-6 py-1">
-        <div className="font-bold text-xl text-center">Thar</div>
+        <div className="font-bold text-xl text-center">Hyundai iMax</div>
         <p className="text-gray-700 text-base">
           best car for the ride
         </p>
@@ -78,7 +78,7 @@ function Buy() {
     <div className="w-[20rem] rounded overflow-hidden shadow-lg">
       <img className="w-[20rem] " src='https://th.bing.com/th?id=OIP.XL0eSVAxrSPo-QPmrJDy1QHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2' alt='' />
       <div className="px-6 py-1">
-        <div className="font-bold text-xl text-center">Thar</div>
+        <div className="font-bold text-xl text-center">Hyundai iMax</div>
         <p className="text-gray-700 text-base">
           best car for the ride
         </p>
@@ -93,7 +93,7 @@ function Buy() {
     <div className="w-[20rem] rounded overflow-hidden shadow-lg">
       <img className="w-[20rem] " src='https://th.bing.com/th?id=OIP.XL0eSVAxrSPo-QPmrJDy1QHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2' alt='' />
       <div className="px-6 py-1">
-        <div className="font-bold text-xl text-center">Thar</div>
+        <div className="font-bold text-xl text-center">Hyundai iMax</div>
         <p className="text-gray-700 text-base">
           best car for the ride
         </p>
@@ -108,7 +108,7 @@ function Buy() {
     <div className="w-[20rem] rounded overflow-hidden shadow-lg">
       <img className="w-[20rem] " src='https://th.bing.com/th?id=OIP.XL0eSVAxrSPo-QPmrJDy1QHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2' alt='' />
       <div className="px-6 py-1">
-        <div className="font-bold text-xl text-center">Thar</div>
+        <div className="font-bold text-xl text-center">Hyundai iMax</div>
         <p className="text-gray-700 text-base">
           best car for the ride
         </p>

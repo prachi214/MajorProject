@@ -10,6 +10,7 @@ import Signup from "./Component/Signup/Signup"
 import Buy from "./Component/Buy/Buy"
 function App() {
   return (
+    
     <>
     <div className=" h-screen">
       <Navbar />
@@ -24,6 +25,7 @@ function App() {
       </Routes>
     </div>
     </>
+    
   )
 }
 
