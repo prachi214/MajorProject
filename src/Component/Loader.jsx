@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 const Loader = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, easing: 'ease-in-out' }); // Initialize AOS
+    AOS.init({ duration: 1000, easing: 'ease-in-out' }); 
   }, []);
 
   return (
@@ -23,11 +23,7 @@ data-aos="zoom-in"
           <Card.Section>
             <div className="text-black">
               <Text c="dimmed" className="!text-white-500" size="lg">
-                Text-to-speech software, or TTS, will read the text of documents
-                and web pages aloud. Most have different voice options to choose
-                from, and allow you to customize the speed and pitch of the voice.
-                They can also highlight the word currently being read, allowing
-                users to follow along visually.
+              It is an arrangement that allows individuals and businesses to access a vehicle. People do not need any ownership in this business. Car rental companies provide a fleet of vehicles that the customers can choose from based on their needs, like size, model, and duration of use.
               </Text>
             </div>
           </Card.Section>

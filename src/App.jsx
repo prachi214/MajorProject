@@ -1,19 +1,19 @@
-import { Route, Routes } from 'react-router-dom';
-import { MantineProvider } from '@mantine/core';
-import { useEffect, useState } from 'react';
+import { Route, Routes } from "react-router-dom";
+import { MantineProvider } from "@mantine/core";
+import { useEffect, useState } from "react";
 
-import './App.css';
-import Navbar from "./Component/Navbar";
+import "./App.css";
+import Navbar from "./Component/Header/Navbar";
 import Home from "./Component/Home/Home";
-import Help from "./Component/Help/Help";
+
 import Aboutus from "./Component/About/Aboutus";
 import Login from "./Component/Login/Login";
 import Signup from "./Component/Signup/Signup";
 import Buy from "./Component/Buy/Buy";
-import Loader from './Component/Loader';
+import Loader from "./Component/Loader";
 import Services from "./Component/Services/Services";
-import ContactUs from './Component/contactus/ContactUs';
-import CustomFooter from "./Component/Footer/Footer";  
+import ContactUs from "./Component/contactus/ContactUs";
+import CustomFooter from "./Component/Footer/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -38,9 +38,18 @@ function App() {
           {/* SVG Background  */}
           <defs>
             <linearGradient id="bg">
-              <stop offset="0%" style={{ stopColor: "rgba(130, 158, 249, 0.06)" }} />
-              <stop offset="50%" style={{ stopColor: "rgba(76, 190, 255, 0.6)" }} />
-              <stop offset="100%" style={{ stopColor: "rgba(115, 209, 72, 0.2)" }} />
+              <stop
+                offset="0%"
+                style={{ stopColor: "rgba(130, 158, 249, 0.06)" }}
+              />
+              <stop
+                offset="50%"
+                style={{ stopColor: "rgba(76, 190, 255, 0.6)" }}
+              />
+              <stop
+                offset="100%"
+                style={{ stopColor: "rgba(115, 209, 72, 0.2)" }}
+              />
             </linearGradient>
             <path
               id="wave"
@@ -88,9 +97,10 @@ function App() {
           ) : (
             <>
               <Navbar />
+
               <Routes>
                 <Route path="/home" element={<Home />} />
-                <Route path="/help" element={<Help />} />
+
                 <Route path="/about" element={<Aboutus />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/contact" element={<ContactUs />} />
@@ -103,7 +113,6 @@ function App() {
           )}
         </div>
 
-     
         <CustomFooter />
       </div>
     </MantineProvider>
