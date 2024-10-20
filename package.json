@@ -10,12 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mantine/core": "^7.13.3",
+    "@mantine/hooks": "^7.13.3",
     "@react-oauth/google": "^0.12.1",
+    "@tabler/icons-react": "^3.19.0",
+    "aos": "^2.3.4",
+    "flowbite": "^2.5.2",
+    "flowbite-react": "^0.10.2",
     "jwt-decode": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.1",
-    "react-toastify": "^10.0.5"
+    "react-router-dom": "^6.27.0",
+    "react-slick": "^0.30.2",
+    "react-toastify": "^10.0.5",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
