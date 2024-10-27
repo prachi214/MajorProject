@@ -29,7 +29,7 @@ function Navbar() {
               </li>
               <li className="hover:bg-yellow-300 px-4 py-4 rounded-xl">
                 <NavLink
-                  to="/aboutus"
+                  to="/about"
                   className={({ isActive }) => (isActive ? "text-black" : "")}
                 >
                   About Us
@@ -41,6 +41,15 @@ function Navbar() {
                   className={({ isActive }) => (isActive ? "text-black" : "")}
                 >
                   Services
+                </NavLink>
+              </li>
+
+              <li className="hover:bg-yellow-300 px-4 py-4 rounded-xl">
+                <NavLink
+                  to="/pages"
+                  className={({ isActive }) => (isActive ? "text-black" : "")}
+                >
+               Page
                 </NavLink>
               </li>
               <li className="hover:bg-yellow-300 px-4 py-4 rounded-xl">

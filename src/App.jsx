@@ -14,6 +14,7 @@ import Loader from "./Component/Loader";
 import Services from "./Component/Services/Services";
 import ContactUs from "./Component/contactus/ContactUs";
 import CustomFooter from "./Component/Footer/Footer";
+import Page from "./Component/Pages/Page";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -103,6 +104,7 @@ function App() {
 
                 <Route path="/about" element={<Aboutus />} />
                 <Route path="/services" element={<Services />} />
+                <Route path="/pages" element={<Page />} />
                 <Route path="/contact" element={<ContactUs />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />

@@ -41,7 +41,7 @@ const Sidebar = () => {
               Home
             </NavLink>
             <NavLink
-              to="/aboutus"
+              to="/about"
               onClick={toggle}
               className="text-white text-lg hover:text-yellow-300"
             >
@@ -53,6 +53,13 @@ const Sidebar = () => {
               className="text-white text-lg hover:text-yellow-300"
             >
               Services
+            </NavLink>
+            <NavLink
+              to="/pages"
+              onClick={toggle}
+              className="text-white text-lg hover:text-yellow-300"
+            >
+             Page
             </NavLink>
             <NavLink
               to="/login"
