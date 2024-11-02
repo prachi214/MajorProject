@@ -2,15 +2,24 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { IconBikeFilled } from "@tabler/icons-react";
 import Sidebar from "./Sidebar";
+import { Select } from '@mantine/core';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const [isCarActive, setIsCarActive] = useState(false);
+  const navigate = useNavigate();
+
+  const handleCarSelect = (value) => {
+    navigate(`/car/${value.toLowerCase()}`); 
+  };
   return (
     <>
       <header className=" pn:hidden sm:hidden lg:flex">
         <nav>
           <div>
             <ul
-              className="min-h-full w-full flex flex-row justify-evenly font-medium text-xl gap-10 p-6 
+              className="min-h-full w-full flex flex-row justify-evenly font-medium text-xl gap-10 pt-2
               sm:justify-center text-white"
             >
               <IconBikeFilled
@@ -19,7 +28,7 @@ function Navbar() {
                 color="#64FFDA"
                 stroke={1.25}
               />
-              <li className="hover:bg-yellow-300 px-4 py-4 rounded-xl">
+              <li className="hover:bg-yellow-300  px-4 py-4 rounded-xl">
                 <NavLink
                   to="/home"
                   className={({ isActive }) => (isActive ? "text-black" : "")}
@@ -44,13 +53,30 @@ function Navbar() {
                 </NavLink>
               </li>
 
-              <li className="hover:bg-yellow-300 px-4 py-4 rounded-xl">
+              <li className="hover:bg-yellow-300 px-4 py-4 rounded-xl"                 onMouseEnter={() => setIsCarActive(true)}
+                onMouseLeave={() => setIsCarActive(false)}>
+                
                 <NavLink
-                  to="/pages"
-                  className={({ isActive }) => (isActive ? "text-black" : "")}
+                  to="/car"
+                  className={({ isActive }) => (isActive ? "text-black flex flex-row" : "")} 
                 >
-               Page
+              Cars
+
+           
                 </NavLink>
+                {isCarActive && (
+                  <Select
+                    label="Choose your car type"
+                    placeholder="Select"
+                    data={[
+                      { value: 'cardetails', label: 'Car Details' },
+                      { value: 'cartype', label: 'Car Type' },
+                      { value: 'carlist', label: 'Car List' },
+                    ]}
+                    onChange={handleCarSelect}
+                    className="mt-2"
+                  />
+                )}
               </li>
               <li className="hover:bg-yellow-300 px-4 py-4 rounded-xl">
                 <NavLink

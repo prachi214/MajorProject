@@ -11,8 +11,8 @@ export default function AboutPart3() {
           Testimonials
         </div>
 
-        <Text size="lg"> Welcome to our company</Text>
-        <Text size="lg">We strive for excellence in all that we do.</Text>
+   
+        <Text size="lg">What our customers are saying about us</Text>
       </div>
       <AutoPlay />
     </div>

@@ -1,4 +1,8 @@
 import React from "react";
+"use client";
+
+
+
 import { useDisclosure } from "@mantine/hooks";
 import { IconX } from "@tabler/icons-react";
 import { Drawer, Burger } from "@mantine/core";
@@ -55,11 +59,12 @@ const Sidebar = () => {
               Services
             </NavLink>
             <NavLink
-              to="/pages"
+              to="/car"
               onClick={toggle}
               className="text-white text-lg hover:text-yellow-300"
             >
-             Page
+          Car
+
             </NavLink>
             <NavLink
               to="/login"
