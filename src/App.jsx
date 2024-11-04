@@ -105,7 +105,7 @@ function App() {
                 <Route path="/about" element={<Aboutus />} />
                 <Route path="/services" element={<Services />} />
                 {/* <Route path="/car" element={<Cars />} /> */}
-                <Route path="/car" element={<Cars />} />
+                <Route path="/car/*" element={<Cars />} />
                 <Route path="/contact" element={<ContactUs />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />

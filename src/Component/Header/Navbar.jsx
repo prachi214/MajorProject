@@ -11,7 +11,7 @@ function Navbar() {
   const navigate = useNavigate();
 
   const handleCarSelect = (value) => {
-    navigate(`/car/${value.toLowerCase()}`); 
+    navigate(`/car/${value}`); 
   };
   return (
     <>
