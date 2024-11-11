@@ -41,8 +41,8 @@ export default function AboutPart2() {
             Your trusted partner in reliable car rental
           </h2>
           <p className="mt-4 mb-5">
-            Aqestic Optio Amet A Ququam Saepe Aliquid Voluate Dicta Fuga Dolor
-            Saerror Sed Earum A Magni Soluta Quam Minus Dolor Dolor
+          At [Brand Name], we believe that renting a car should be simple and convenient. With a fleet of modern vehicles ranging from compact cars to spacious SUVs, we cater to every need and every budget. Our commitment to transparency, reliability,
+           and affordability has made us a trusted choice for travelers everywhere.
           </p>
         </div>
 
@@ -50,14 +50,14 @@ export default function AboutPart2() {
           <div className="about-trusted-booking flex items-start">
             <img src={iconabout1} alt="icon1" className="icon-box mr-4" />
             <div>
-              <h3 className="text-lg font-semibold">Easy booking process</h3>
+              <h3 className="text-lg font-semibold text-left">Easy booking process</h3>
               <p>Optimized booking for ease and safety.</p>
             </div>
           </div>
           <div className="about-trusted-booking flex items-start">
             <img src={iconabout2} alt="icon2" className="icon-box mr-4" />
             <div>
-              <h3 className="text-lg font-semibold">
+              <h3 className="text-lg font-semibold text-left">
                 Convenient pick-up &amp; return process
               </h3>
               <p>

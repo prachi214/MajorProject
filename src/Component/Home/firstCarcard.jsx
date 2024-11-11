@@ -12,8 +12,10 @@ const CarComponent = () =>{
           className="w-72 h-auto"
         />
       </div>
-      <h1 className="text-3xl font-bold mb-4  text-white ">The perfect ride is just a tap away!</h1>
-      <p className="text-lg mt-4  text-white">your jounery Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+      <h1 className="text-5xl font-bold mb-4  text-white ">The perfect ride is just a tap away!</h1>
+      <p className="text-lg mt-4  text-white">welcome to car rent
+Looking to save more on
+your rental car? </p>
     </div>
   );
 };
