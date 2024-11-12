@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SimpleSlider from "./slider";
+import Slider2 from "./slider2";
 import "./slider.css";
 import CarComponent from "./firstCarcard";
+import Slider3 from "./slider3";
 
 function Home() {
   return (
@@ -23,14 +25,14 @@ function Home() {
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           >
-            <SimpleSlider />
+            <Slider2 />
           </div>
           <div
             data-aos="fade-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
           >
-            <SimpleSlider />
+            <Slider3 />
           </div>
         </div>
       </div>
