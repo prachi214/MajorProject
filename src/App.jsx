@@ -9,7 +9,7 @@ import Home from "./Component/Home/Home";
 import Aboutus from "./Component/About/Aboutus";
 import Login from "./Component/Login/Login";
 import Signup from "./Component/Signup/Signup";
-import Buy from "./Component/Buy/Buy";
+
 import Loader from "./Component/Loader";
 import Services from "./Component/Services/Services";
 import ContactUs from "./Component/contactus/ContactUs";
@@ -109,7 +109,7 @@ function App() {
                 <Route path="/contact" element={<ContactUs />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
-                <Route path="/buy" element={<Buy />} />
+           
                 <Route path="/" element={<Home />} />
               </Routes>
             </>
