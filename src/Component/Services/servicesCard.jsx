@@ -1,9 +1,17 @@
 import React from "react";
-
+// import  "./servicesCard.css";
 import { useNavigate } from "react-router-dom";
 import { Card, Image, Text, Badge, Button, Group } from "@mantine/core";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+
+import privateimg from "../img/privatecar.jpg";
+
+import carairport from "../img/carairport.jpeg";
+import privatetransfer from "../img/privatetransfer.jpeg";
+import eventtransportation from "../img/eventtransportation.jpg";
+import driverimg from "../img/driverimg.jpg";
+import chauffeurimg from "../img/chauffeurimg.jpg";
 function ServicesCard() {
   const navigate = useNavigate();
 
@@ -12,52 +20,53 @@ function ServicesCard() {
   const serviceData = [
     {
       id: 1,
-      title: "Flexible Rental Options",
+      title: "business car rental",
       imgSrc:
-        "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png",
+      privateimg,
       description: "Whether you need a car for a day, a week, or a month, we offer flexible rental plans to suit any schedule. Our hassle-free rental options make it easy for you to stay on the road as long as you need.",
       badgeText: "On Sale",
     },
     {
       id: 2,
-      title: "24/7 Customer Support",
+      title: "chauffeur services",
       imgSrc:
-        "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png",
+      chauffeurimg,
       description: "Our dedicated customer support team is available 24/7 to assist you with any questions or concerns. From booking inquiries to roadside assistance, we’re always just a call or message away.",
       badgeText: "Limited Offer",
     },
     {
       id: 3,
-      title: "Free Cancellation Policy",
+      title: "car rental with driver",
       imgSrc:
-        "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-4.png",
-      description: "We understand that plans can change unexpectedly. That’s why we offer free cancellations on most rentals, giving you the flexibility to adjust your booking without any extra fees.",
+   driverimg,
+      description: "With our car rental services, you can easily book a car with a driver, ensuring that your trip is hassle-free and safe.",
       badgeText: "New",
     },
     {
       id: 4,
-      title: " Comprehensive Roadside Assistance",
+      title: "airport transfer",
       imgSrc:
-        "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-3.png",
+        carairport,
       description: "We prioritize your safety and peace of mind. Our rental packages include comprehensive roadside assistance to ensure you’re covered in case of any unexpected issues, wherever your journey takes you.",
       badgeText: "Special Offer",
     },
     {
       id: 5,
-      title: "Wide Range of Vehicle Choices",
+      title: "Private transfer",
       imgSrc:
-        "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png",
+      privatetransfer,
       description: "From compact economy cars to spacious SUVs and luxury models, our diverse fleet offers options for every traveler. Explore our selection and choose the vehicle that best fits your trip and budget.",
       badgeText: "Popular",
     },
     {
       id: 6,
-      title: "Convenient Pickup and Drop-off Locations",
+      title: "event transportation",
       imgSrc:
-        "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-5.png",
-      description: "With multiple locations for pick-up and drop-off, we make it convenient for you to start and end your rental wherever suits you best. Enjoy a seamless experience with minimal travel interruptions.",
+      eventtransportation,
+      description: "With multiple locations for pick-up and drop-off, we make it convenient for you to start and end your rental wherever suits you best.",
       badgeText: "Best Seller",
     },
+
   ];
 
   return (
@@ -69,12 +78,13 @@ function ServicesCard() {
           gap: "20px"}}>
      
           {serviceData.map((slide) => (
-            <div key={slide.id} data-aos="flip-right" >
-              <Card shadow="sm" padding="lg" radius="md" withBorder className="w-[400px] h-[400px]">
+            <div key={slide.id} data-aos="flip-right"  >
+              <Card shadow="sm" padding="lg" radius="md" withBorder className="w-[400px] h-[550px]">
                 <Card.Section>
-                  <Image
+                  <Image 
                     src={slide.imgSrc}
-                    height={100} 
+                    width={50}
+                    height={10} 
                     alt={slide.title}
                   />
                 </Card.Section>
@@ -84,7 +94,7 @@ function ServicesCard() {
                   <Badge color="pink">{slide.badgeText}</Badge>
                 </Group>
 
-                <Text size="sm" color="dimmed">
+                <Text size="sm" color="dimmed" lineClamp={5}>
                   {slide.description}
                 </Text>
 

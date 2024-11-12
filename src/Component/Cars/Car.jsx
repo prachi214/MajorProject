@@ -16,7 +16,7 @@ export default function Cars() {
   return (
    <>
          <Card
-        style={{ marginTop: 12, marginLeft: 80 }}
+        style={{ marginTop: 12, marginLeft: 80, marginBottom: 18 }}
         className="w-[90vw] items-center justify-center flex flex-col"
       >
         <Card.Section style={{ position: "relative", width: "100%" }}>

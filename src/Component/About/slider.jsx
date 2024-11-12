@@ -3,6 +3,9 @@ import Slider from "react-slick";
 import { useNavigate } from "react-router-dom";
 import { Card, Image, Text, Badge, Button, Group } from "@mantine/core";
 
+import customer2 from "../img/customer2.png";
+import customer3 from "../img/customer3.jpg";
+import customer4 from "../img/customer4.png";
 function AutoPlay() {
   const navigate = useNavigate();
   const settings = {
@@ -21,51 +24,51 @@ function AutoPlay() {
   const slidesData = [
     {
       id: 1,
-      title: "Norway Fjord Adventures",
+      title: "Sanjna Johnson",
       imgSrc:
-        "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png",
-      description: "Explore the magical fjord landscapes with tours.",
-      badgeText: "On Sale",
+      customer4,
+      description: "Amazing experience! The car was clean, comfortable, and exactly as described. The whole process was smooth and convenient. Will definitely rent again!",
+   
     },
     {
       id: 2,
-      title: "Beautiful Swiss Alps",
+      title: "Mike Anderson",
       imgSrc:
-        "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png",
-      description: "Take in breathtaking views from the stunning Swiss Alps.",
-      badgeText: "Limited Offer",
+      customer2,
+      description: "The booking process was easy, and I loved the variety of cars available. Pick-up and drop-off were hassle-free. Highly recommended!",
+   
     },
     {
       id: 3,
-      title: "Sunny Beaches of Maldives",
+      title: "Jessica Lee",
       imgSrc:
-        "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-4.png",
-      description: "Relax on the pristine beaches of the Maldives.",
-      badgeText: "New",
+      customer3,
+      description: "Rented an SUV for a weekend trip. The vehicle was well-maintained and reliable. Customer service was prompt in answering my queries.",
+ 
     },
     {
       id: 4,
-      title: "Wildlife Safari in Africa",
+      title: "Devi Brown",
       imgSrc:
-        "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-3.png",
-      description: "Experience the thrilling African wildlife safari.",
-      badgeText: "Special Offer",
+      customer4,
+      description: "Affordable rates and excellent service. The car was in perfect condition, and there were no hidden fees. I’d recommend it to my friends!",
+  
     },
     {
       id: 5,
-      title: "The Northern Lights in Iceland",
+      title: "Emily Clark",
       imgSrc:
-        "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png",
-      description: "Witness the magical northern lights in Iceland.",
-      badgeText: "Popular",
+      customer2,
+      description: "Overall, a good experience. The car had a minor dent, but the service agent was upfront about it. The rest was great!",
+ 
     },
     {
       id: 6,
-      title: "Grand Canyon, USA",
+      title: " Jason White",
       imgSrc:
-        "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-5.png",
-      description: "Explore the vast landscapes of the Grand Canyon.",
-      badgeText: "Best Seller",
+      customer3,
+      description: "Loved the luxury sedan I rented! The car felt brand new, and the rental process was seamless. A premium experience!",
+  
     },
   ];
 
@@ -73,7 +76,7 @@ function AutoPlay() {
     <div
       style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}
     >
-      <div style={{ width: "100%" }}>
+      <div style={{  width: "90%", maxWidth: "1200px", margin: "0 auto" }}>
         <Slider {...settings}>
           {slidesData.map((slide) => (
             <div key={slide.id}>
@@ -81,14 +84,16 @@ function AutoPlay() {
                 <Card.Section>
                   <Image
                     src={slide.imgSrc}
+                    width={100} 
                     height={100} 
+                  
                     alt={slide.title}
                   />
                 </Card.Section>
 
                 <Group position="apart" mt="md" mb="xs">
                   <Text weight={500}>{slide.title}</Text>
-                  <Badge color="pink">{slide.badgeText}</Badge>
+                  {/* <Badge color="pink">{slide.badgeText}</Badge> */}
                 </Group>
 
                 <Text size="sm" color="dimmed">

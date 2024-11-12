@@ -33,7 +33,7 @@ const login = useGoogleLogin({
     
     <>
     <div>
-      <img className='w-full h-[43rem] pn:hidden   ' src="https://www.neilhuffman.com/blogs/2798/wp-content/uploads/2019/12/packing-the-car-for-holiday-trip.jpg" alt="" />
+      {/* <img className='w-full h-[43rem] pn:hidden   ' src="https://www.neilhuffman.com/blogs/2798/wp-content/uploads/2019/12/packing-the-car-for-holiday-trip.jpg" alt="" /> */}
     <form className='absolute bottom-[12rem]  2xl:ml-[60rem] md:ml-[10rem] sm:ml-[7rem] sm:w-[26rem] pn:ml-3 pn:w-[28rem] bg-blue-300 bg-opacity-80 flex justify-center direction-column w-[30rem] mx-[30rem] mt-[6rem] py-[2rem] text-center rounded-2xl text-black ' >
       <div >
         <h1 className="font-semibold  text-4xl">Login</h1>
